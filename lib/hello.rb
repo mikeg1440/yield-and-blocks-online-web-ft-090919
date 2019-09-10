@@ -1,5 +1,7 @@
 def hello_t(names)
   
+  if yield
+  
   names.each do |name|
     
     yield(name)
