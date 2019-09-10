@@ -1,6 +1,8 @@
 def hello_t(names)
   
-  if yield
+  if !block_given?
+    return "Hey! No block was given!"
+  end
   
   names.each do |name|
     
