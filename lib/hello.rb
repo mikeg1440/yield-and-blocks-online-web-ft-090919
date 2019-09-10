@@ -1,5 +1,10 @@
-def hello_t
-  yield
+def hello_t(names)
+  
+  names.each |name| do
+    
+    yield(name)
+    
+  end
 end
 
 # call your method here!
