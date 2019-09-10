@@ -1,6 +1,6 @@
 def hello_t(names)
   
-  names.each |name| do
+  names.each do |name|
     
     yield(name)
     
