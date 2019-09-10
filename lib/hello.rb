@@ -1,12 +1,14 @@
 def hello_t(names)
   
   if !block_given?
-    return "Hey! No block was given!"
-  end
+    puts"Hey! No block was given!"
   
-  names.each do |name|
-    
-    yield(name)
+  else
+    names.each do |name|
+      
+      yield(name)
+        
+    end
     
   end
 end
